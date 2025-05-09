@@ -1,13 +1,51 @@
-nome = input('[Menu Principal] Escolha uma das Opções')
-print('1 - Categorias')
-print('2 - Editoras')
-print('3 - Autores')
-print('4 - Livros')
-print('0 - Sair do programa')
+menu_principal = """
+[Menu Principal] Escolha uma das seguintes opções:
+1 - Categorias
+2 - Editoras
+3 - Autores
+4 - Livros
+0 - Sair do programa
+"""
 
-op = 1
+menu_categoria = """
+[Categorias] Escolha uma das seguintes opções:
+1 - Listar toda as categorias
+2 - Adicionar nova categoria
+3 - Excluir categoria
+4 - Ver categoria por Id
+0 - Voltar ao menu anterior
+"""
+
+menu_editora = """
+[Editoras] Escolha uma das seguintes opções:
+1 - Listar todas as editoras
+2 - Adicionar nova editora
+3 - Excluir editora
+4 - Ver editora por Id
+0 - Voltar ao menu anterior
+"""
+
+menu_autor = """
+[Autores] Escolha uma das seguintes opções:
+1 - Listar todos os autores
+2 - Adicionar novo autor
+3 - Excluir autor
+4 - Ver autor por Id
+5 - Editar autor
+0 - Voltar ao menu anterior
+"""
+
+menu_livro = """
+[Livros] Escolha uma das seguintes opções:
+1 - Listar todos os livros
+2 - Adicionar novo livro
+3 - Excluir livro
+4 - Ver livro por Id
+0 - Voltar ao menu anterior
+"""
 
 while True:
+    print(menu_principal)
     op = input('Digite a opção: ')
 
     if op == '0':
@@ -26,6 +64,7 @@ while True:
         input('Digite <ENTER> para continuar...')
     else:
         print('Opção inválida!')
+
 
 print('Programa encerrado!')    
 
